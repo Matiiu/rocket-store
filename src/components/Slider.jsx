@@ -31,9 +31,10 @@ export const Slider = ({ imagenes }) => {
                 className="mySwiper w-screen"
             >
                 {imagenes.map((imagen, i) => (
-                <SwiperSlide key={i}> <img src={imagen} alt="" /></SwiperSlide>
-                ))}
-               
+                <SwiperSlide> 
+                <figure key={i}><img src={imagen} alt="image/slide" /></figure>
+                </SwiperSlide>
+                ))}               
             </Swiper>
         </>
     )

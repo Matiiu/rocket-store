@@ -11,17 +11,29 @@ import slider1 from '../assets/img/slider1.jpg'
 import slider2 from '../assets/img/slider2.jpg'
 import slider3 from '../assets/img/slider3.jpg'
 import slider4 from '../assets/img/slider4.jpg'
+import logo from '../assets/img/rocket-icon-vector.png'
 
 export const Header = () => {
-    const imagenes = [slider1, slider2, slider3, slider4]
+	const imagenes = [slider1, slider2, slider3, slider4]
 
-    return (
-			<header>
-				<div>
-					<nav>
-						<ul>
-							<li>
-								<Link to="/">
+	return (
+		<header>
+			<div className="flex  gap-3">
+
+				<Slider imagenes={imagenes} />
+				<aside className="flex justify-between align-center">
+					<nav className="flex flex-col items-center gap-[125px]">
+						<figure>
+							<img
+								src={logo}
+								alt="logo"
+								width="45"
+								height="45"
+							/>
+						</figure>
+						<ul className="flex flex-col gap-6 text-3xl text-white">
+							<li >
+								<Link to="/" >
 									<AiTwotoneHome />
 								</Link>
 							</li>
@@ -46,7 +58,7 @@ export const Header = () => {
 								</Link>
 							</li>
 						</ul>
-						<ul>
+						<ul className="text-white">
 							<li>
 								<Link to="">Search</Link>
 							</li>
@@ -58,8 +70,8 @@ export const Header = () => {
 							</li>
 						</ul>
 					</nav>
-				</div>
-				<Slider imagenes={imagenes} />
-			</header>
-		);
+				</aside>
+			</div>
+		</header>
+	);
 }
