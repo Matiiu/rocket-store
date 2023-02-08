@@ -16,6 +16,7 @@ export const Slider = ({ imagenes }) => {
     return (
         <>
             <Swiper
+                
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
@@ -27,7 +28,7 @@ export const Slider = ({ imagenes }) => {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper w-screen"
             >
                 {imagenes.map((imagen, i) => (
                 <SwiperSlide key={i}> <img src={imagen} alt="" /></SwiperSlide>
