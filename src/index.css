@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 28, 45, 0.719) 000000%,
+    rgba(2, 28, 45, 0.726) 35%,
+    rgb(21, 22, 22) 100%
+  );
+}
+
+.bg-imagen {
+  background-image: url("./assets/img/bg-imagen.png");
+  background-size: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
