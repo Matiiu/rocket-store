@@ -1,17 +1,13 @@
 import './App.css'
+import { Card } from './components/Card/Card'
 import { Footer } from './components/Footer/Footer'
 
 function App() {
 
 
-
-
-
   //////////////////////////////////////////////////
   return (
-
     <>
-
       <div className="app"> 
 
         {/* MAIN */}
@@ -19,37 +15,17 @@ function App() {
 
           {/* SECCION 1 */}
           <section>
+            {/* SLIDER */}
             <div className='slider'></div>
 
             <div className='caja'>
-
+              {/* TITULO */}
               <h2 className='caja__titulo'>Productos</h2>
-
+              {/* CONTENEDOR TARJETAS */}
               <div className='caja__contenedor'>
-                <article>
-                  <h2>calzado Hombre random</h2>
-                  <img className='card__imagen'/>
-                  <button>
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                </article>
-
-                <article>
-                  <h2>calzado Hombre random</h2>
-                  <img className='card__imagen'/>
-                  <button>
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                </article>
-
-                <article>
-                  <h2>calzado Hombre random</h2>
-                  <img className='card__imagen'/>
-                  <button>
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                </article>
-
+                <Card/>
+                <Card/>
+                <Card/>
               </div>
 
             </div>
