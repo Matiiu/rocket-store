@@ -1,0 +1,19 @@
+.figure{
+  background-color: red;
+}
+
+.figure > img{
+  background: yellow;
+  background-position-x: 300px;
+  position: relative;
+  /* top: -200px; */
+}
+.figure:nth-child(1) > img{
+  /* top: -150px; */
+}
+.figure:nth-child(2) > img{
+  top: -150px;
+}
+.figure:nth-child(3) > img{
+  /* top: -150px; */
+}
